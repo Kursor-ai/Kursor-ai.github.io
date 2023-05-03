@@ -1,7 +1,7 @@
 {
   "name": "kursor.in",
   "version": "0.1.0",
-  "homepage": "https://Kursor-ai.github.io",
+  "homepage": "https://www.kursor.in",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
