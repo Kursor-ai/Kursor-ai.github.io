@@ -1,26 +1,29 @@
 {
-  "name": "kursor.in",
+  "name": "kursors",
   "version": "0.1.0",
-  "homepage": "https://www.kursor.in/#",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.3",
-    "aos": "^3.0.0-beta.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1",
-    "react-transition-group": "^4.4.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^3.1.0",
-    "autoprefixer": "^10.4.13",
-    "gh-pages": "^5.0.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6",
-    "vite": "^4.1.1"
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-icons/all-files": "^4.1.0",
+    "aos": "^2.3.4",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-collapse": "^5.1.1",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "tailwindcss": "3.3.2"
   }
 }
