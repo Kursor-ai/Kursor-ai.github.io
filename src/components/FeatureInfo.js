@@ -58,7 +58,7 @@ const FeatureInfo = ({ extraClassList }) => {
                 </ul>
 
                 <Link
-                  href="login.html"
+                href="https://chrome.google.com/webstore/detail/kursor-chatgpt-and-google/ajoickdlofadbaooambnlnlbcpdnkkck"
                   className="flex items-center arrow-link arrow-link-primary-dark text-primary-dark gap-3  hover:text-purple-500   text-purple-600 mt-4  hover:underline"
                 >
                   Try Compose Feature
@@ -107,7 +107,7 @@ const FeatureInfo = ({ extraClassList }) => {
                 </p>
 
                 <Link
-                  href="login.html"
+                href="https://chrome.google.com/webstore/detail/kursor-chatgpt-and-google/ajoickdlofadbaooambnlnlbcpdnkkck"
                   className="flex items-center arrow-link arrow-link-primary-dark text-primary-dark gap-3  hover:text-purple-500   text-purple-600 mt-4  hover:underline"
                 >
                   Try AI Powered Search
@@ -158,7 +158,7 @@ const FeatureInfo = ({ extraClassList }) => {
                   </li>
                 </ul>
                 <Link
-                  href="login.html"
+                href="https://chrome.google.com/webstore/detail/kursor-chatgpt-and-google/ajoickdlofadbaooambnlnlbcpdnkkck"
                   className="flex items-center arrow-link arrow-link-primary-dark text-primary-dark gap-3  hover:text-purple-500   text-purple-600 mt-4  hover:underline"
                 >
                   Try Chat Feature
