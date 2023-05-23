@@ -29,6 +29,7 @@ const HeroHome = () => {
               ChatGPT and Google Bard
             </span>{" "}
           </p>
+   <p className="text-purple-200 text-2xl mt-3">It's Free</p>
 
           <div className="flex justify-center space-x-4 mt-10">
             <Link
