@@ -84,8 +84,7 @@ const Feature = () => {
               <div className="content">
                 <h4 className="mb-4 text-white text-2xl font-bold">Chat</h4>
                 <p className="text-gray-400">
-                  Need someone to talk? Chat with Kursor AI and get all the
-                  solution to your problem
+                  Need someone to talk? Chat with Kursor AI and get the solution to all your problems
                 </p>
               </div>
             </div>
