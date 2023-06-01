@@ -1,11 +1,8 @@
 import Image from "next/image";
-import exploreImg from "../images/explore (6).png";
-import composeImg from "../images/writing (1).png";
-import chatImg from "../images/chat (1).png";
 const Feature = () => {
   return (
-    <main className="mr-28 ml-28 mt-10">
-      <section className="py-10 py-lg-15">
+
+      <section className="py-10 mr-28 ml-28 mt-10 py-lg-15">
         <div className="container">
           <div className="text-center mb-18">
             <h1
@@ -29,7 +26,7 @@ const Feature = () => {
             >
               <div className="flex-shrink-0 flex items-center justify-center rounded-lg p-2 border bg-purple-200 text-black border-white border-opacity-25 h-12 w-12 ">
                 <Image
-                  src={exploreImg}
+                  src={'/images/exploreicon.webp'}
                   alt="Generates quality contents"
                   className="rounded-lg"
                   width={50}
@@ -52,7 +49,7 @@ const Feature = () => {
             >
               <div className="flex-shrink-0 flex items-center justify-center rounded-lg p-2 border bg-purple-200 text-black border-white border-opacity-25 h-12 w-12 ">
                 <Image
-                  src={composeImg}
+                  src={'/images/composeicon.webp'}
                   alt="Generates quality contents"
                   className="rounded-lg"
                   width={50}
@@ -74,7 +71,7 @@ const Feature = () => {
             >
               <div className="flex-shrink-0 flex items-center justify-center rounded-lg p-2 border bg-purple-200 text-black border-white border-opacity-25 h-12 w-12 ">
                 <Image
-                  src={chatImg}
+                  src={'/images/chaticon.webp'}
                   alt="Generates quality contents"
                   className="rounded-lg"
                   width={50}
@@ -91,7 +88,6 @@ const Feature = () => {
           </div>
         </div>
       </section>
-    </main>
   );
 };
 

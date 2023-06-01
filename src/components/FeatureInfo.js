@@ -1,17 +1,12 @@
+import { Icons } from "@/icons";
 import Image from "next/image";
-import img from '../images/illustration/feature-illustration-3-yellow.svg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import feature1 from "../images/illustration/feature-illustration-1-yellow.svg";
-import featureImg from "../images/illustration/feature-illustration2.svg";
 import Link from "next/link";
 
 const FeatureInfo = ({ extraClassList }) => {
   return (
-    <main className="mr-28 ml-28 mt-16">
+    <section className="mr-28 ml-28 mt-16">
       {/* feature 1  */}
-      <section className={`py-10 py-lg-15 ${extraClassList}`} id="feature1">
+      <div className={`py-10 py-lg-15 ${extraClassList}`} id="feature1">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-14 xl:gap-x-20 items-center">
             <div
@@ -34,14 +29,15 @@ const FeatureInfo = ({ extraClassList }) => {
                 </p>
                 <ul className="list-disc list-inside mb-8">
                   <li className="flex items-center text-gray-400">
-                    <FontAwesomeIcon icon={faCheck} />
+                  <Icons.check />
                     <span className="text-gray-400 mt-1">
                       &nbsp;&nbsp;&nbsp; Increased productivity &
                       Confidence-Boosting
                     </span>
                   </li>
                   <li className="flex items-center text-gray-400">
-                    <FontAwesomeIcon icon={faCheck} />
+                                     <Icons.check />
+
 
                     <span className="text-gray-400 mt-1">
                       &nbsp;&nbsp;&nbsp; Versatile Writing Support with
@@ -49,7 +45,8 @@ const FeatureInfo = ({ extraClassList }) => {
                     </span>
                   </li>
                   <li className="flex items-center text-gray-400">
-                    <FontAwesomeIcon icon={faCheck} />
+                                     <Icons.check />
+
                     <span className="text-gray-400 mt-1">
                       &nbsp;&nbsp;&nbsp; Instant Personalized Compositions &
                       Grammar, Spell checks
@@ -62,22 +59,22 @@ const FeatureInfo = ({ extraClassList }) => {
                   className="flex items-center arrow-link arrow-link-primary-dark text-primary-dark gap-3  hover:text-purple-500   text-purple-600 mt-4  hover:underline"
                 >
                   Try Compose Feature
-                  <FontAwesomeIcon icon={faArrowRight} />
+                                   <Icons.arrowRight />
                 </Link>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="250">
-              <div class="feature-img">
-                <Image src={feature1} alt="" class="img-fluid" />
+            <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="250">
+              <div className="feature-img">
+                <Image height={600} width={600} src={'/illustration/feature1.svg'}  alt="" className="img-fluid" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Feature 2 */}
 
-      <section className={`py-10 py-lg-15 ${extraClassList}`} id="feature2">
+      <div className={`py-10 py-lg-15 ${extraClassList}`} id="feature2">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-14 xl:gap-x-20 items-center">
             <div
@@ -86,7 +83,7 @@ const FeatureInfo = ({ extraClassList }) => {
               data-aos-delay="250"
             >
               <div className="feature-img">
-                <Image src={featureImg} alt="" class="img-fluid" />
+                <Image height={600} width={600} src={'/illustration/feature2.svg'} alt="" className="img-fluid" />
               </div>
             </div>
             <div
@@ -111,16 +108,16 @@ const FeatureInfo = ({ extraClassList }) => {
                   className="flex items-center arrow-link arrow-link-primary-dark text-primary-dark gap-3  hover:text-purple-500   text-purple-600 mt-4  hover:underline"
                 >
                   Try AI Powered Search
-                  <FontAwesomeIcon icon={faArrowRight} />
+                                   <Icons.arrowRight />
                 </Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* feature 3 */}
-      <section className={`py-10 py-lg-15 ${extraClassList}`} id="feature3">
+      <div className={`py-10 py-lg-15 ${extraClassList}`} id="feature3">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-x-14 xl:gap-x-20 items-center">
             <div
@@ -145,13 +142,15 @@ const FeatureInfo = ({ extraClassList }) => {
                 </p>
                 <ul className="list-disc list-inside mb-8">
                   <li className="flex items-center text-gray-400">
-                    <FontAwesomeIcon icon={faCheck} />
+                                     <Icons.check />
+
                     <span className="text-gray-400 mt-1">
                       &nbsp;&nbsp;&nbsp; AI-Powered Chat
                     </span>
                   </li>
                   <li className="flex items-center text-gray-400">
-                    <FontAwesomeIcon icon={faCheck} />
+                                     <Icons.check />
+
                     <span className="text-gray-400 mt-1">
                       &nbsp;&nbsp;&nbsp; Web Data Integration
                     </span>
@@ -162,19 +161,19 @@ const FeatureInfo = ({ extraClassList }) => {
                   className="flex items-center arrow-link arrow-link-primary-dark text-primary-dark gap-3  hover:text-purple-500   text-purple-600 mt-4  hover:underline"
                 >
                   Try Chat Feature
-                  <FontAwesomeIcon icon={faArrowRight} />
+                                   <Icons.arrowRight />
                 </Link>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="250">
-              <div class="feature-img">
-                <Image src={img} alt="" class="img-fluid" />
+            <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="250">
+              <div className="feature-img">
+                <Image height={600} width={600} src={'/illustration/feature3.svg'} alt="" className="img-fluid" />
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

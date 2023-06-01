@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import kursorimg from '../images/kursorimg.png'
-const CTC = () => {
+const Ctc = () => {
   return (
     <div>
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 mt-28">
@@ -25,7 +24,7 @@ const CTC = () => {
 
       {/* Hero image */}
       <Image
-        src={kursorimg}
+        src={'/images/kursordark.webp'}
         alt="Info Image"
         width={1100}
         height={400}
@@ -36,4 +35,4 @@ const CTC = () => {
   );
 };
 
-export default CTC;
+export default Ctc;

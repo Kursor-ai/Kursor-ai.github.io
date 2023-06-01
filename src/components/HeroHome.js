@@ -1,15 +1,12 @@
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+
 
 import "aos/dist/aos.css";
 
 const HeroHome = () => {
-  const videoLink =
-    "https://app.heygen.com/embeds/67c0dbb850ee4097b8c8e2e0d4320190";
 
   return (
-    <main className="mr-24 ml-24 ">
+    <section className="mr-24 ml-24 ">
       {/* Hero content */}
       <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
         {/* Section header */}
@@ -76,7 +73,7 @@ const HeroHome = () => {
         </li>
       </ul> */}
     
-    </main>
+    </section>
   );
 };
 

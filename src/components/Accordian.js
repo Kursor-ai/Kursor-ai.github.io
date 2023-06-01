@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Accordion = ({ index, title, content, isOpen, onToggle }) => {
   return (

@@ -1,17 +1,12 @@
+import { Icons } from "@/icons";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../images/latestlogo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+
 
 const Footer = () => {
   return (
-    <main className="ml-24 mt-20">
-      <footer className="bg-striped pt-10 pt-lg-15">
+    
+      <footer className="bg-striped ml-24 mt-20 pt-10 pt-lg-15">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             <div className="col-span-12 lg:col-span-9 xl:col-span-8 order-2 lg:order-2">
@@ -62,43 +57,34 @@ const Footer = () => {
                         className="py-3 px-4 bg-purple-500 border-purple-400 border-2 rounded-r-lg "
                         type="button"
                       >
-                        <FontAwesomeIcon
-                          icon={faPaperPlane}
+                        <Icons.send 
                           className="text-white"
                         />
                       </button>
                     </div>
                   </form>
-                  <ul className="list-unstyled d-flex flex-wrap align-center justify-center justify-md-start gap-3 social-list mb-0 mt-6">
+                  <ul className="list-unstyled  flex flex-wrap align-center justify-center justify-md-start gap-3 social-list mb-0 mt-6">
                     <Link href="https://www.linkedin.com/in/kursor-ai-43249b271/">
-                      <FontAwesomeIcon
-                        icon={faLinkedin}
-                        color="gray"
-                        className="text-xl"
+                      <Icons.linkedIn
+                        className={"text-gray-500 h-5 w-5"}
                       />
                     </Link>
 
                     <Link href="https://twitter.com/kursorai">
-                      <FontAwesomeIcon
-                        icon={faTwitter}
-                        color="gray"
-                        className="ml-5 text-xl"
+                      <Icons.twitter
+                        className="ml-5 text-gray-500 h-5 w-5"
                       />
                     </Link>
 
                     <Link href="https://www.facebook.com/profile.php?id=100092308844971">
-                      <FontAwesomeIcon
-                        icon={faFacebook}
-                        color="gray"
-                        className="ml-5  text-xl"
+                    <Icons.facebook
+                        className="ml-5 text-gray-500 h-5 w-5"
                       />
                     </Link>
 
                     <Link href="https://www.instagram.com/kursorai/">
-                      <FontAwesomeIcon
-                        icon={faInstagram}
-                        color="gray"
-                        className="ml-5  text-xl"
+                    <Icons.instagram
+                        className="ml-5 text-gray-500 h-5 w-5"
                       />
                     </Link>
                   </ul>
@@ -110,7 +96,7 @@ const Footer = () => {
                 <div className="flex items-center">
                   <Link href="/" className="flex items-center space-x-2">
                     <Image
-                      src={logo}
+                      src={'/images/newlogo.webp'}
                       alt="GenAI Logo"
                       width={135}
                       height={34}
@@ -138,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </main>
+ 
   );
 };
 

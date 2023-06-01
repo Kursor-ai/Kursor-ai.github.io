@@ -1,0 +1,8 @@
+export {default as Header} from './Header'
+export {default as Accordian} from './Accordian'
+export {default as HeroHome} from './HeroHome'
+export {default as Ctc} from './Ctc'
+export {default as Feature} from './Feature'
+export {default as FeatureInfo} from './FeatureInfo'
+export {default as Footer} from './Footer'
+export {default as Reviews} from './Reviews'
