@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import { Icons } from "@/icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,7 +47,7 @@ const Footer = () => {
 
                 <div className="footer-widget text-center md:text-left ml-8">
                   <h6 className="text-white mb-4">News &amp; Update</h6>
-                  <form action="#">
+                  {/* <form action="#">
                     <div className="flex items-center mt-6">
                       <input
                         type="email"
@@ -62,29 +63,29 @@ const Footer = () => {
                         />
                       </button>
                     </div>
-                  </form>
-                  <ul className="list-unstyled  flex flex-wrap align-center justify-center justify-md-start gap-3 social-list mb-0 mt-6">
-                    <Link href="https://www.linkedin.com/in/kursor-ai-43249b271/">
+                  </form> */}
+                  <ul className="list-unstyled  flex flex-wrap align-center justify-start justify-md-start gap-3 social-list mb-0 mt-6">
+                    <Link href={siteConfig.links.linkedIn}>
                       <Icons.linkedIn
-                        className={"text-gray-500 h-5 w-5"}
+                        className={"text-gray-500 hover:text-purple-500 h-5 w-5"}
                       />
                     </Link>
 
-                    <Link href="https://twitter.com/kursorai">
+                    <Link href={siteConfig.links.twitter}>
                       <Icons.twitter
-                        className="ml-5 text-gray-500 h-5 w-5"
+                        className="ml-5 text-gray-500 hover:text-purple-500 h-5 w-5"
                       />
                     </Link>
 
-                    <Link href="https://www.facebook.com/profile.php?id=100092308844971">
+                    <Link href={siteConfig.links.facebook}>
                     <Icons.facebook
-                        className="ml-5 text-gray-500 h-5 w-5"
+                        className="ml-5 text-gray-500 hover:text-purple-500 h-5 w-5"
                       />
                     </Link>
 
-                    <Link href="https://www.instagram.com/kursorai/">
+                    <Link href={siteConfig.links.instagram}>
                     <Icons.instagram
-                        className="ml-5 text-gray-500 h-5 w-5"
+                        className="ml-5 text-gray-500 hover:text-purple-500 h-5 w-5"
                       />
                     </Link>
                   </ul>
@@ -96,10 +97,10 @@ const Footer = () => {
                 <div className="flex items-center">
                   <Link href="/" className="flex items-center space-x-2">
                     <Image
-                      src={'/images/newlogo.webp'}
-                      alt="GenAI Logo"
-                      width={135}
-                      height={34}
+                      src={siteConfig.logo}
+                      alt="Kursor Logo"
+                      width={50}
+                      height={50}
                       className="img-fluid"
                     />
                     <span className="text-2xl font-bold text-purple-500">

@@ -26,7 +26,7 @@ const HeroHome = () => {
               ChatGPT and Google Bard
             </span>{" "}
           </p>
-   <p className="text-purple-200 text-2xl mt-3">It's Free</p>
+   <p className="text-purple-200 text-2xl mt-3"  data-aos="fade-up">It's Free</p>
 
           <div className="flex justify-center space-x-4 mt-10">
             <Link
@@ -44,9 +44,9 @@ const HeroHome = () => {
               height="500"
               src="https://app.heygen.com/embeds/67c0dbb850ee4097b8c8e2e0d4320190"
               title="HeyGen video player"
-              frameborder="0"
+              frameBorder="0"
               allow="encrypted-media; fullscreen;"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>

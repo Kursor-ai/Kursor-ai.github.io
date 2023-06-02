@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { siteConfig } from "@/config/site";
 
 const Header = () => {
   const [isHomePage, setIsHomePage] = useState(false);
@@ -25,13 +26,13 @@ const Header = () => {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Logo */}
-            <Link href="/" className="flex flex-col items-center space-y-2">
+            <Link href="/" className="flex  items-center  gap-3">
               <Image
-                src={'/images/newlogo.webp'}
-                alt="GenAI Logo"
-                width={135}
-                height={34}
-                className="img-fluid mt-6"
+                src={siteConfig.logo}
+                alt="Kursor Logo"
+                width={50}
+                height={50}
+                className=""
               />
               <span className="text-3xl font-bold text-purple-500">Kursor</span>
             </Link>
