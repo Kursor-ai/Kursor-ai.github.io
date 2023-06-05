@@ -3,10 +3,10 @@ import { useState } from "react";
 
 const Accordion = ({ index, title, content, isOpen, onToggle }) => {
   return (
-    <div className="border-b border-gray-400" data-aos="fade-up">
+    <div className="border-b  border-gray-400 " data-aos="fade-up">
       <button
         type="button"
-        className="flex justify-between items-center w-full px-4 py-3 text-2xl mb-4 font-medium text-left bg-black text-white hover:text-purple-500 focus:outline-none focus:bg-black transition duration-150 ease-in-out"
+        className="flex justify-between  items-center w-full px-4 py-3 md:text-2xl text-xl mb-4 font-medium text-left bg-black text-white hover:text-purple-500 focus:outline-none focus:bg-black transition duration-150 ease-in-out"
         onClick={() => onToggle(index)}
       >
         <span>{title}</span>
@@ -155,19 +155,19 @@ const AccordionSection = () => {
   };
 
   return (
-    <div className="mr-96 ml-96 mt-32">
-      <div className="container" data-aos="fade-up">
+    <section className="section w-full flex flex-col ">
+      <div className="" data-aos="fade-up">
         <div className="flex justify-center mb-18">
           <div className="w-full lg:w-10/12">
             <div className="text-center">
-              <h1
-                className="mb-20 text-white text-5xl font-bold leading-snug"
+              <h2
+                className="mb-20 text-white md:text-4xl text-3xl font-bold leading-snug"
                 data-aos="fade-up-sm"
                 data-aos-delay="50"
               >
                 Questions About<span className="text-purple-500"> Kursor </span>{" "}
                 We have Answers!
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@ const AccordionSection = () => {
           onToggle={handleToggleAccordion}
         />
       ))}
-    </div>
+    </section>
   );
 };
 

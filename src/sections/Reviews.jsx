@@ -3,22 +3,22 @@ import { Icons } from "@/icons";
 const Reviews = () => {
   const noOfStars = 5;
   return (
-    <section className="mr-32 ml-32 mt-32">
-      <div className="container" data-aos="fade-up">
+    <section className="section" >
+      <div className=""  data-aos="fade-up">
         <div className="flex justify-center mb-18">
           <div className="w-full lg:w-9/12">
-            <div className="text-center text-5xl">
-              <h1 className="text-white leading-snug font-bold">
+            <div className="text-center ">
+              <h2 className="text-white text-3xl leading-snug font-bold">
                 <span className="text-purple-500">Kursor</span> Received{" "}
                 <span className="text-yellow-500"> 5/5</span> Stars from its
                 users
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 mt-20">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-20">
         <div className="bg-white p-6 rounded-lg shadow-lg border-2">
           <h4 className=" text-lg font-bold">Divyanshi Tiwari</h4>
           {/* <p className="text-white mb-4">Web Developer</p> */}

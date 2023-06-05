@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { assetLinkGenerator } from "@/lib/utils";
 const Ctc = () => {
   return (
-    <div>
+    <div className="section">
       <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16 mt-28">
         <h1
-          className="font-bold text-5xl text-white leading-snug"
+          className="font-bold md:text-5xl text-4xl text-white leading-snug"
           data-aos="fade-up"
         >
           Using <span className="text-purple-500">Kursor</span> you can save
@@ -24,11 +25,13 @@ const Ctc = () => {
 
       {/* Hero image */}
       <Image
-        src={'/images/kursordark.webp'}
+        src={assetLinkGenerator('/product_images/kursorlight_m5nd7n')}
         alt="Info Image"
-        width={1100}
-        height={400}
-        className="border-2 border-purple-400 mt-16 rounded-2xl"
+        width={0}
+        height={0}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+         
+        className="border-2 border-purple-400 mt-16  w-full h-auto rounded-2xl"
         data-aos="fade-up"
       />
     </div>

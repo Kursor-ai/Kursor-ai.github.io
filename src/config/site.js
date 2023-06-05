@@ -1,8 +1,8 @@
 export const siteConfig = {
-    name: "Kursor - Your AI Copilot",
+    name: "Kursor - Your Personal AI Assistant",
     logo:"/logo.webp",
     description:
-      "Chat with ChatGPT or Google Bard AI while surfing the web !!!",
+      "Kursor is your personal AI assistant, offering free access to ChatGPT and Google Bard. With free & unlimited: compose, chat, and create instantly. Tap into the limitless possibilities of AI technology.",
     url: "https://www.kursor.in",
     ogImage: "https://www.kursor.in/images/kursordark.webp",
     links: {

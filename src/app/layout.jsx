@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/components";
+import { Footer, Header } from "@/sections";
 import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import {GoogleAnalytics} from "@/components/analytics";
@@ -39,12 +39,6 @@ export const metadata = {
         width: 800,
         height: 600,
       },
-      {
-        url: siteConfig.logo,
-        width: 1800,
-        height: 1600,
-        alt: 'Kursor - Your AI Copilot',
-      },
     ],
   },
   twitter: {
@@ -70,12 +64,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html  lang="en">
       <GoogleAnalytics
         GA_TRACKING_ID={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}
       />
-      <body className={inter.className}>
-        <Header />
+      <body  className={inter.className}>
         {children}
         <Footer />
       </body>

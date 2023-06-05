@@ -1,18 +1,20 @@
 import {
   Ctc,
-  Feature,
   FeatureInfo,
   HeroHome,
   Reviews,
-  Accordian
-} from "@/components";
+  Accordian,
+  Header,
+  Features,
+} from "@/sections";
 
 export default function Home() {
   return (
     <>
+      <Header home />
       <main className="flex min-h-screen flex-col items-center justify-between">
         <HeroHome />
-        <Feature />
+        <Features />
         <FeatureInfo />
         <Reviews />
         <Accordian />

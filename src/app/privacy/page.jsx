@@ -1,3 +1,4 @@
+import { Header } from "@/sections";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -6,6 +7,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <>
+    <Header />
       <main className="flex min-h-screen flex-col items-center justify-between ">
         <section className="relative">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">

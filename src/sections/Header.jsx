@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { siteConfig } from "@/config/site";
 
-const Header = () => {
+const Header = ({home}) => {
   const [isHomePage, setIsHomePage] = useState(false);
   const [isPrivacyPage, setIsPrivacyPage] = useState(false);
 
@@ -20,25 +20,25 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="absolute w-full z-30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <header className="fixed bg-black top-0 left-0 right-0 w-full z-30">
+      <div className="md:max-w-7xl w-screen  md:mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
+          <nav className=" flex grow">
             {/* Logo */}
             <Link href="/" className="flex  items-center  gap-3">
               <Image
                 src={siteConfig.logo}
                 alt="Kursor Logo"
-                width={50}
-                height={50}
+                width={40}
+                height={40}
                 className=""
               />
-              <span className="text-3xl font-bold text-purple-500">Kursor</span>
+              <span className="text-xl font-bold text-purple-500">Kursor</span>
             </Link>
 
             <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
+              <li className={home?"hidden":""}>
                 <Link
                   href="/"
                   className={`px-8 py-4 text-sm font-semibold text-white ${
@@ -48,7 +48,7 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              <li className={home?"":"hidden"}>
                 <Link
                   href="/privacy"
                   className={`py-4 px-4 text-sm text-bold ${

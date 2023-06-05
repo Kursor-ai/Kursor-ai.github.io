@@ -2,8 +2,9 @@
 const nextConfig = {
     output: 'export',
     images: {
-        unoptimized: true
-      }
+      loader: 'custom',
+      loaderFile: './src/components/Image.js',
+    },
 }
 
 module.exports = nextConfig
