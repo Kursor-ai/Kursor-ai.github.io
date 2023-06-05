@@ -28,7 +28,7 @@ const Header = ({home}) => {
             {/* Logo */}
             <Link href="/" className="flex  items-center  gap-3">
               <Image
-                src={siteConfig.logo}
+                src={'/logo.webp'}
                 alt="Kursor Logo"
                 width={40}
                 height={40}
