@@ -12,10 +12,10 @@ export function FeatureDetailsCard({ featureDetails, extraClassList }) {
       <div className="container">
         <div className={`flex   flex-col   gap-6 lg:gap-x-14 xl:gap-x-20 items-center ${isRightToLeft? "md:flex-row-reverse" : "md:flex-row" }`}>
           <div className="flex-[0.5]" data-aos="fade-up-sm" data-aos-delay="250">
-            <div className="feature-img">
+            <div className="feature-img rounded-lg overflow-hidden">
               <Image
-                height={600}
-                width={600}
+                height={800}
+                width={800}
                 src={featureImg}
                 alt=""
                 aria-hidden="true"
