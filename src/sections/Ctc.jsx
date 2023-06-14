@@ -25,7 +25,7 @@ const Ctc = () => {
 
       {/* Hero image */}
       <Image
-        src={assetLinkGenerator('/product_images/kursorlight_m5nd7n')}
+        src={assetLinkGenerator('/product_images/pd1_azyeie')}
         alt="Info Image"
         width={0}
         height={0}

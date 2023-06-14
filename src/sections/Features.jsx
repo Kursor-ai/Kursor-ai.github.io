@@ -20,7 +20,7 @@ const Features = () => {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-14 mt-20">
             {siteContentConfig.features.map((feature,i) => (
-               <FeatureCard feature={feature} animationDelay={200 + (50 * i) } />
+               <FeatureCard key={i} feature={feature} animationDelay={200 + (50 * i) } />
             ))}
           </div>
       </section>
