@@ -6,7 +6,7 @@ export const siteConfig = {
     url: "https://www.kursor.in",
     ogImage: "https://res.cloudinary.com/dxubmtkua/image/upload/f_webp/v1685979511/web_assets/product_images/pd1_azyeie.webp",
     links: {
-      linkedIn:"https://www.linkedin.com/in/kursor-ai-43249b271/",
+      linkedIn:"https://www.linkedin.com/company/kursor/",
       twitter: "https://twitter.com/kursorai",
       facebook: "https://www.facebook.com/people/Kursor-AI/100092308844971/",
       instagram:"https://www.instagram.com/kursorai/"
