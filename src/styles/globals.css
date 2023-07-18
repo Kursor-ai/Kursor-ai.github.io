@@ -7,6 +7,8 @@
       @apply py-11 md:pt-16 lg:pt-16 px-5 sm:px-9 md:px-20  md:max-w-7xl  md:mx-auto ;
   }
 }
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,5 +32,19 @@
     )
     rgb(var(--background-start-rgb)); */
     
-    background-color:black;
+    /* background-color:white; */
+    background-color: #11121c
+    
+
+
+    
 } 
+/* linear-gradient(358deg,#000,#162866); */
+/* background: linear-gradient(358deg,#000,#162866); */
+/* background-color: #000; */
+/* background: linear-gradient(359deg,#423582,#000); */
+/* background: linear-gradient(181deg,#000,#0a1f66); */
+/* background: linear-gradient(358deg,#000,#0a1f66); */
+/* background: linear-gradient(181deg,#000,#251b4e); */
+/* background: linear-gradient(358deg,#000,#251b4e); */
+/* background: linear-gradient(181deg,#000,#1b2b4e); */

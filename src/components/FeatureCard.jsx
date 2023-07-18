@@ -7,8 +7,8 @@ export  function FeatureCard ({feature, animationDelay}) {
     data-aos={animationDelay ? "fade-up-sm": ""}
     data-aos-delay={animationDelay?`${animationDelay}`:""}
   >
-    <div className="flex-shrink-0 flex  items-center justify-center rounded-lg p-2 border bg-purple-200 text-black border-white border-opacity-25 h-12 w-12 ">
-      <Image
+     <div className="flex-shrink-0 flex  items-center justify-center rounded-lg p-2 border text-black border-white border-opacity-25 h-[56px] w-[56px] ">
+     <Image
         src={feature.iconImg}
         alt="Generates quality contents"
         className="rounded-lg"

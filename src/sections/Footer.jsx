@@ -5,13 +5,14 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
+    // <div className="bg-custome-gradient6 h-[100%] w-[100%]">
     <footer className="bg-striped section">
       <div className="flex md:flex-row md:justify-between items-start flex-col gap-10">
         <div className="footer-widget md:flex-[0.35]">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src={'/logo'}
+                src={"/logo"}
                 alt="Kursor Logo"
                 width={50}
                 height={50}
@@ -42,18 +43,18 @@ const Footer = () => {
           <ul className="link-list list-unstyled mb-0 text-gray-500 ">
             <li className="text-sm">
               <Link href="#feature1" className="hover:text-purple-500">
-                Feature 1
+                Features
               </Link>
             </li>
 
             <li className="mt-3 text-sm">
-              <Link href="#feature2" className="hover:text-purple-500">
-                Feature 2
+              <Link href="#faq" className="hover:text-purple-500">
+                Faq's
               </Link>
             </li>
             <li className="mt-3 text-sm">
-              <Link href="#feature3" className="hover:text-purple-500">
-                Feature 3
+              <Link href="#kursor" className="hover:text-purple-500">
+                What is Kursor ?
               </Link>
             </li>
           </ul>
@@ -88,6 +89,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
+    // </div>
   );
 };
 
