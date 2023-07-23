@@ -9,7 +9,7 @@ export function FeatureDetailsCard({ featureDetails, extraClassList }) {
 
   return (
     <div
-      className={`py-10 py-lg-15 ${extraClassList}`}
+      className={`py-32 py-lg-15 ${extraClassList}`}
       id={"feature" + (id + 1)}
     >
       <div className="container">
@@ -20,13 +20,14 @@ export function FeatureDetailsCard({ featureDetails, extraClassList }) {
         >
           <div
             className="flex-[0.5]"
-            data-aos="fade-up-sm"
-            data-aos-delay="250"
+            data-aos="zoom-in"
+            // data-aos-delay="250"
+           
           >
             <div className="feature-img rounded-lg overflow-hidden">
               <Image
-                height={800}
-                width={800}
+      height={800}
+      width={800}
                 src={featureImg}
                 alt=""
                 aria-hidden="true"
@@ -38,10 +39,10 @@ export function FeatureDetailsCard({ featureDetails, extraClassList }) {
             className={`flex-[0.5] animate-fade-up-sm animate-delay-${100 + id * 50}`}
           >
             <div className="content">
-              <h2 className="text-white mb-8 md:text-3xl text-2xl mt-3 font-bold leading-snug">
+              <h6 className="text-white mb-8 md:text-3xl  mt-3 font-bold leading-snug">
                 {title}
-              </h2>
-              <div className="animate-fade-up-sm">{description}</div>
+              </h6>
+              <div className="animate-fade-up-sm  text-sm" >{description}</div>
 
               <Link
                 href="https://chrome.google.com/webstore/detail/kursor-chatgpt-and-google/ajoickdlofadbaooambnlnlbcpdnkkck"

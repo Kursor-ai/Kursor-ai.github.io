@@ -5,7 +5,8 @@ const Video = () => {
     // <div className="bg-custome-gradient6">
     <div
       id="kursor"
-      data-aos="fade-up"
+      // data-aos="fade-up"
+      data-aos="zoom-in-up"
       className="md:h-[394px]  md:w-[960px] mx-auto"
     >
       <div class="-mx-4 flex flex-wrap">
@@ -15,7 +16,7 @@ const Video = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/g_QCAm8YMlQ"
+                src="https://www.youtube.com/embed/g_QCAm8YMlQ?autoplay=1&mute=1"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

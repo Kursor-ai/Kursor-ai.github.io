@@ -23,8 +23,9 @@ export default function Home() {
       
       
         <Reviews />
-        <Accordian />
         <Ctc />
+        <Accordian />
+     
       {/* </main> */}
     </>
   );

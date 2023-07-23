@@ -40,16 +40,16 @@ export const featureDetails = [
           incorporating web data to provide you with even more informative and
           engaging conversations.
         </p>
-        <ul className="list-disc list-inside mb-8">
+        <ul className="list-disc list-inside mb-8 flex flex-col gap-y-[10px]">
           <li className="flex items-center text-gray-400">
-            <Icons.check />
+          <Icons.check className="bg-purple-600 rounded-md p-[1px] text-white" />
 
-            <span className="text-gray-400 mt-1">
+            <span className="text-gray-400 mt-1 text-sm">
               &nbsp;&nbsp;&nbsp; AI-Powered Chat
             </span>
           </li>
           <li className="flex items-center text-gray-400">
-            <Icons.check />
+          <Icons.check className="bg-purple-600 rounded-md p-[1px] text-white" />
 
             <span className="text-gray-400 mt-1">
               &nbsp;&nbsp;&nbsp; Web Data Integration
@@ -96,22 +96,22 @@ export const featureDetails = [
           AI-powered composition feature and elevate your writing to new
           heights.
         </p>
-        <ul className="list-disc list-inside mb-8">
+        <ul className="list-disc list-inside mb-8 flex flex-col gap-y-[10px]">
           <li className="flex items-center text-gray-400">
-            <Icons.check />
+          <Icons.check className="bg-purple-600 rounded-md p-[1px] text-white" />
             <span className="text-gray-400 ml-2 mt-1">
               Increased productivity & Confidence-Boosting
             </span>
           </li>
           <li className="flex items-center text-gray-400">
-            <Icons.check />
+          <Icons.check className="bg-purple-600 rounded-md p-[1px] text-white" />
 
             <span className="text-gray-400 ml-2 mt-1">
               Versatile Writing Support with contextual understanding
             </span>
           </li>
           <li className="flex items-center  text-gray-400">
-            <Icons.check />
+             <Icons.check className="bg-purple-600 rounded-md p-[1px] text-white" />
 
             <span className="text-gray-400 ml-2 mt-1">
               Instant Personalized Compositions & Grammar, Spell checks

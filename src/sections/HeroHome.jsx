@@ -3,20 +3,20 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import "aos/dist/aos.css";
 import React from "react";
-
+import "../styles/globals.css"
 const HeroHome = () => {
   return (
     // <div className="bg-custome-gradient5 h-[100%] w-[100%]"> 
     <section className="section ">
       {/* Hero content */}
-      <div className="  flex space-y-10  md:max-w-3xl md:mx-auto  text-center flex-col">
+      <div className="pt-[30px]  flex space-y-10  md:mx-auto  text-center flex-col">
         {/* Section header */}
         <div className=" flex  flex-col  space-y-4 ">
           <h1
             className="h1  md:text-5xl text-4xl font-bold text-white leading-snug "
             data-aos="fade-up"
           >
-            Search. Write. Create. Explore on one click with{" "}
+            Search. Write. Create. Explore on one click{" "}
             <span className="text-purple-500 bg-purple-300">
               <Typewriter
                 options={{
@@ -61,7 +61,7 @@ const HeroHome = () => {
           </h1>
           <p className="text-white text-xl  " data-aos="fade-up">
             Experience unlimited access to the all-in-one AI assistant with web
-            access. Combining the intelligence of{" "}
+            access. <br /> Combining the intelligence of{" "}
             <span className="font-bold text-purple-500">
               {" "}
               ChatGPT and Google Bard
@@ -71,10 +71,10 @@ const HeroHome = () => {
             It's Free
           </p>
 
-          <div className="flex justify-center   ">
+          <div className=" flex justify-center   ">
             <Link
               href="https://chrome.google.com/webstore/detail/kursor-chatgpt-and-google/ajoickdlofadbaooambnlnlbcpdnkkck"
-              className=" inline-block text-white bg-gradient-to-r from-purple-400 to-purple-600 px-6 py-3 rounded-lg hover:text-black hover:bg-white "
+             className="button"
               data-aos="fade-up"
             >
               Add to Chrome

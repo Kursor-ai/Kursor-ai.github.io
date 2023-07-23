@@ -48,7 +48,7 @@ const Header = ({ home }) => {
                   Home
                 </Link>
               </li>
-              <li className={home ? "" : "hidden"}>
+              {/* <li className={home ? "" : "hidden"}>
                 <Link
                   href="#feature1"
                   className={`py-4 px-4 text-sm text-bold ${
@@ -59,8 +59,8 @@ const Header = ({ home }) => {
                 >
                   Features
                 </Link>
-              </li>
-              <li className={home ? "" : "hidden"}>
+              </li> */}
+              {/* <li className={home ? "" : "hidden"}>
                 <Link
                   href="#reviews"
                   className={`py-4 px-4 text-sm text-bold ${
@@ -71,8 +71,8 @@ const Header = ({ home }) => {
                 >
                   Reviews
                 </Link>
-              </li>
-              <li className={home ? "" : "hidden"}>
+              </li> */}
+              {/* <li className={home ? "" : "hidden"}>
                 <Link
                   href="#faq"
                   className={`py-4 px-4 text-sm text-bold ${
@@ -83,7 +83,7 @@ const Header = ({ home }) => {
                 >
                   Faq's
                 </Link>
-              </li>
+              </li> */}
               <li className={home ? "" : "hidden"}>
                 <Link
                   href="/privacy"
