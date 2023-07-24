@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { siteConfig } from "@/config/site";
 
-const Header = ({home}) => {
+const Header = ({ home }) => {
   const [isHomePage, setIsHomePage] = useState(false);
   const [isPrivacyPage, setIsPrivacyPage] = useState(false);
 
@@ -20,15 +20,15 @@ const Header = ({home}) => {
   }, []);
 
   return (
-    <header className="fixed bg-black top-0 left-0 right-0 w-full z-30">
+    <header className=" bg-black top-0 left-0 right-0 w-full z-30 fixed">
       <div className="md:max-w-7xl w-screen  md:mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-[65px]">
           {/* Desktop navigation */}
           <nav className=" flex grow">
             {/* Logo */}
             <Link href="/" className="flex  items-center  gap-3">
               <Image
-                src={'/logo.webp'}
+                src={"/logo.webp"}
                 alt="Kursor Logo"
                 width={40}
                 height={40}
@@ -38,7 +38,7 @@ const Header = ({home}) => {
             </Link>
 
             <ul className="flex grow justify-end flex-wrap items-center">
-              <li className={home?"hidden":""}>
+              <li className={home ? "hidden" : ""}>
                 <Link
                   href="/"
                   className={`px-8 py-4 text-sm font-semibold text-white ${
@@ -48,7 +48,43 @@ const Header = ({home}) => {
                   Home
                 </Link>
               </li>
-              <li className={home?"":"hidden"}>
+              {/* <li className={home ? "" : "hidden"}>
+                <Link
+                  href="#feature1"
+                  className={`py-4 px-4 text-sm text-bold ${
+                    isPrivacyPage
+                      ? "text-white bg-purple-500"
+                      : "text-purple-400"
+                  } rounded-md hover:text-white`}
+                >
+                  Features
+                </Link>
+              </li> */}
+              {/* <li className={home ? "" : "hidden"}>
+                <Link
+                  href="#reviews"
+                  className={`py-4 px-4 text-sm text-bold ${
+                    isPrivacyPage
+                      ? "text-white bg-purple-500"
+                      : "text-purple-400"
+                  } rounded-md hover:text-white`}
+                >
+                  Reviews
+                </Link>
+              </li> */}
+              {/* <li className={home ? "" : "hidden"}>
+                <Link
+                  href="#faq"
+                  className={`py-4 px-4 text-sm text-bold ${
+                    isPrivacyPage
+                      ? "text-white bg-purple-500"
+                      : "text-purple-400"
+                  } rounded-md hover:text-white`}
+                >
+                  Faq's
+                </Link>
+              </li> */}
+              <li className={home ? "" : "hidden"}>
                 <Link
                   href="/privacy"
                   className={`py-4 px-4 text-sm text-bold ${

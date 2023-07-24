@@ -7,6 +7,38 @@
       @apply py-11 md:pt-16 lg:pt-16 px-5 sm:px-9 md:px-20  md:max-w-7xl  md:mx-auto ;
   }
 }
+/* Add appropriate styles for the image when it should scroll with the description */
+.scroll-with-description {
+  position: sticky;
+  top: 100px; /* Adjust the value as needed */
+}
+
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll {
+  display: flex;
+  animation: scrollAnimation 20s linear infinite;
+}
+
+.review {
+  flex: 0 0 25%; /* Adjust the width of each review div as needed */
+  padding: 10px;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -20,6 +52,53 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.button {
+  display:inline-block;
+  margin:10px;
+  padding:5px;
+  font-size:25px;
+  width:250px;
+  text-align:center;
+  line-height:1.8;
+  background:linear-gradient(to right,purple,blue) 0 0/0 0;
+  color:#fff;
+  border-radius:35px;
+  position:relative;
+  z-index:0;
+  transition:1s all;
+}
+.button:before,
+.button:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-image:inherit;
+  border-radius:inherit;
+  transition:1s all;
+}
+.button:before {
+  -webkit-mask:
+    linear-gradient(#fff,#fff) top   /100% 5px no-repeat,
+    linear-gradient(#fff,#fff) bottom/100% 5px no-repeat,
+    radial-gradient(farthest-side at left,transparent calc(100% - 6px), #fff calc(100% - 5px)) right/27px 100% no-repeat,
+    radial-gradient(farthest-side at right,transparent calc(100% - 6px), #fff calc(100% - 5px)) left/27px 100% no-repeat;
+  mask:
+    linear-gradient(#fff,#fff) top   /100% 5px no-repeat,
+    linear-gradient(#fff,#fff) bottom/100% 5px no-repeat,
+    radial-gradient(farthest-side at left,transparent calc(100% - 6px), #fff calc(100% - 5px)) right/27px 100% no-repeat,
+    radial-gradient(farthest-side at right,transparent calc(100% - 6px), #fff calc(100% - 5px)) left/27px 100% no-repeat;
+}
+
+.button:hover::after {
+  opacity:0;
+}
+.button:hover {
+  color:white;
+}
 
  body {
   /* color: rgb(var(--foreground-rgb));
@@ -30,5 +109,16 @@
     )
     rgb(var(--background-start-rgb)); */
     
-    background-color:black;
+    /* background-color:white; */
+    background-color: #11121c
 } 
+
+/* linear-gradient(358deg,#000,#162866); */
+/* background: linear-gradient(358deg,#000,#162866); */
+/* background-color: #000; */
+/* background: linear-gradient(359deg,#423582,#000); */
+/* background: linear-gradient(181deg,#000,#0a1f66); */
+/* background: linear-gradient(358deg,#000,#0a1f66); */
+/* background: linear-gradient(181deg,#000,#251b4e); */
+/* background: linear-gradient(358deg,#000,#251b4e); */
+/* background: linear-gradient(181deg,#000,#1b2b4e); */

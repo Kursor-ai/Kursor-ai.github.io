@@ -3,16 +3,44 @@ import { useState } from "react";
 
 const Accordion = ({ index, title, content, isOpen, onToggle }) => {
   return (
-    <div className="border-b  border-gray-400 " data-aos="fade-up">
+    <div className="border-b border-[#2e2f45]">
       <button
         type="button"
-        className="flex justify-between  items-center w-full px-4 py-3 md:text-2xl text-xl mb-4 font-medium text-left bg-black text-white hover:text-purple-500 focus:outline-none focus:bg-black transition duration-150 ease-in-out"
+        className={`flex justify-start items-center w-full   px-4 py-3 md:text-2xl text-xl mb-4 font-medium text-left ${
+          isOpen ? "text-purple-500" : "text-white"
+        } hover:text-purple-500 focus:outline-none transition duration-150 ease-in-out`}
         onClick={() => onToggle(index)}
       >
+        <svg
+          className={`w-7 h-7 ${
+            isOpen ? "mr-[16px] text-purple-500" : "ml-0 mr-[16px]"
+          }`}
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          {isOpen ? (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M20 12H4"
+            />
+          ) : (
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+            />
+          )}
+        </svg>
         <span>{title}</span>
       </button>
       {isOpen && (
-        <div className="p-4 bg-black text-gray-500 text-lg">{content}</div>
+        <div className="border-t border-purple-500 p-4 text-gray-500 text-lg">
+          {content}
+        </div>
       )}
     </div>
   );
@@ -31,15 +59,13 @@ const AccordionSection = () => {
           features. Let's break it down:
           <br />
           <br />
-          <span className=" text-purple-300">
-            1. Browser-integrated AI Chat
-          </span>
+          <span className="text-white">1. Browser-integrated AI Chat</span>
           <br />
-          <span className=" text-purple-300">
+          <span className="text-white">
             2. Seamless Experience and Enhanced Functionality
           </span>
           <br />
-          <span className=" text-purple-300">
+          <span className="text-white">
             3. Simplified and Streamlined Writing Experience
           </span>
           <br />
@@ -57,17 +83,14 @@ const AccordionSection = () => {
       title: "What is Kursor’s Browser-integrated AI Chat? ",
       content: (
         <div>
-          <span className=" text-purple-300">
-            {" "}
-            1. Browser-integrated AI Chat:{" "}
-          </span>{" "}
+          <span className="text-white"> 1. Browser-integrated AI Chat: </span>{" "}
           Kursor combines ChatGPT and Bard in your browser, offering convenience
           and versatility. With Kursor's web mode, ChatGPT can provide
           contextual and informative responses using web data. No need to switch
           between different models or leave your browser.
           <br />
           <br />
-          <span className=" text-purple-300">
+          <span className="text-white">
             2. Immediate Search Responses:
           </span>{" "}
           Start by typing your query into Google. As you search, Kursor will
@@ -82,18 +105,13 @@ const AccordionSection = () => {
       title: "How can Kursor help in writing my blogs or e-mails?",
       content: (
         <div>
-          <span className=" text-purple-300">
-            {" "}
-            1. One-Click Content Creation:
-          </span>{" "}
+          <span className=" text-white"> 1. One-Click Content Creation:</span>{" "}
           Easily write down your thoughts or ideas and insert them into any
           webpage with a single click. Kursor provides a simple solution for all
           your writing needs, whether it's composing emails, brainstorming blog
           posts, or crafting stories. <br />
           <br />
-          <span className=" text-purple-300">
-            2. Simplified Writing Experience:
-          </span>
+          <span className=" text-white">2. Simplified Writing Experience:</span>
           Composing content directly in the browser becomes effortless,
           transforming your writing process. Define the topic, length, and tone,
           and Kursor generates personalized compositions instantly. With
@@ -115,28 +133,20 @@ const AccordionSection = () => {
           your AI assistant :
           <br />
           <br />
-          <span className=" text-purple-300">
-            1. AI Chat at Your Fingertips :
-          </span>
+          <span className=" text-white">1. AI Chat at Your Fingertips :</span>
           Whether you want to ask questions, have a conversation, or require
           assistance, the chat window is readily available. <br />
           <br />
-          <span className=" text-purple-300">
-            2. Immediate Search Responses :
-          </span>
+          <span className=" text-white">2. Immediate Search Responses :</span>
           Saves time as you no longer have to visit multiple websites to find
           your answer.
           <br />
-          <span className=" text-purple-300">
-            3. One-Click Content Creation :
-          </span>
+          <span className=" text-white">3. One-Click Content Creation :</span>
           Compose an email, brainstorm blog post ideas, craft a bedtime story,
           or more, Kursor facilitates an easy, one-click solution for your
           writing needs.
           <br />
-          <span className=" text-purple-300">
-            4. Effortless Text Processing :
-          </span>
+          <span className=" ttext-white">4. Effortless Text Processing :</span>
           Kursor facilitates an easy, one-click solution for your writing needs.
           <br />
           Remember, Kursor is designed to enhance your browsing experience, so
@@ -155,13 +165,14 @@ const AccordionSection = () => {
   };
 
   return (
-    <section className="section w-full flex flex-col ">
+    // <div className="bg-custome-gradient5 h-[100%] w-[100%]">
+    <section id="faq" className="section w-full flex flex-col ">
       <div className="" data-aos="fade-up">
-        <div className="flex justify-center mb-18">
+        <div className="flex justify-center">
           <div className="w-full lg:w-10/12">
             <div className="text-center">
               <h2
-                className="mb-20 text-white md:text-4xl text-3xl font-bold leading-snug"
+                className=" text-white md:text-4xl text-3xl font-bold leading-snug pb-12"
                 data-aos="fade-up-sm"
                 data-aos-delay="50"
               >
@@ -184,6 +195,7 @@ const AccordionSection = () => {
         />
       ))}
     </section>
+    //  </div>
   );
 };
 
